@@ -1,4 +1,4 @@
-package com.example.administrator.mydefine.view;
+package com.example.administrator.mydefine.defineline.view;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -6,6 +6,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.TextView;
 
 import com.example.administrator.mydefine.utils.DensityUtils;
@@ -39,7 +40,8 @@ public class defineLine extends TextView {
         paint.setTextAlign(Paint.Align.CENTER);//设置文字对齐方式，取值：align.CENTER、align.LEFT或align.RIGHT
         paint.setTextSize(DensityUtils.sp2px(getContext(),22));//设置文字大小
         //样式设置
-
+        paint.setShadowLayer(8,10,10,Color.BLUE);
+        setLayerType(View.LAYER_TYPE_HARDWARE, paint);
     }
 
     @Override

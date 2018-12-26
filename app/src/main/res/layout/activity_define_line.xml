@@ -18,8 +18,19 @@
             android:gravity="center"
             android:text="天锁斩月"
             />
-        <com.example.administrator.mydefine.view.defineLine
+        <com.example.administrator.mydefine.defineline.view.defineLine
+            android:id="@+id/tv_2"
             android:layout_width="match_parent"
             android:layout_height="70dp" />
+        <com.example.administrator.mydefine.defineline.view.defineShape
+            android:id="@+id/tv_3"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#99999999"/>
+        <com.example.administrator.mydefine.defineline.view.defineOverl
+            android:id="@+id/tv_4"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#99999999"/>
     </LinearLayout>
 </ScrollView>
